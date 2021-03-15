@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Notes-Store-React-Web-App/static/css/main.519fa6a0.chunk.css",
-    "main.js": "/Notes-Store-React-Web-App/static/js/main.575ee853.chunk.js",
-    "main.js.map": "/Notes-Store-React-Web-App/static/js/main.575ee853.chunk.js.map",
+    "main.js": "/Notes-Store-React-Web-App/static/js/main.fd13d1d8.chunk.js",
+    "main.js.map": "/Notes-Store-React-Web-App/static/js/main.fd13d1d8.chunk.js.map",
     "runtime-main.js": "/Notes-Store-React-Web-App/static/js/runtime-main.2fa95d73.js",
     "runtime-main.js.map": "/Notes-Store-React-Web-App/static/js/runtime-main.2fa95d73.js.map",
     "static/js/2.7a9e54ea.chunk.js": "/Notes-Store-React-Web-App/static/js/2.7a9e54ea.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.2fa95d73.js",
     "static/js/2.7a9e54ea.chunk.js",
     "static/css/main.519fa6a0.chunk.css",
-    "static/js/main.575ee853.chunk.js"
+    "static/js/main.fd13d1d8.chunk.js"
   ]
 }
