@@ -33,13 +33,25 @@ function App() {
     }
   }
 
-  const updateNote = () => {}
+  const updateNote = (e) => {
+    e.preventDefault()
+    setmodalIsOpen(false)
+    const items = notes
+    items.map((item) => {
+      if (item.id === modalForm.id) {
+        item.title = modalForm.title
+        item.description = modalForm.description
+      }
+    })
+
+    setNotes(items)
+  }
 
   const validate = () => {
     let errors = {}
     const checkTitle = (obj) => obj.title === form.title
     if (notes.some(checkTitle)) {
-      errors.title = "title should be unique"
+      errors.title = "Title Already Exist"
     }
     return errors
   }
@@ -80,6 +92,7 @@ function App() {
             name="title"
             value={form.title}
             onChange={handleChange}
+            required
           />
           <p>{error}</p>
           <textarea
@@ -90,6 +103,7 @@ function App() {
             name="description"
             value={form.description}
             onChange={handleChange}
+            required
           ></textarea>
           <button type="submit" className="btn">
             Submit
@@ -113,6 +127,7 @@ function App() {
               name="title"
               value={modalForm.title}
               onChange={ModalhandleChange}
+              required
             />
             <p>{error}</p>
             <textarea
@@ -123,6 +138,7 @@ function App() {
               name="description"
               value={modalForm.description}
               onChange={ModalhandleChange}
+              required
             ></textarea>
             <button type="submit" className="btn">
               Update
