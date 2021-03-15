@@ -1,38 +1,169 @@
-.App {
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   text-align: center;
+  padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  color: #0B1346;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn {
+  display: block;
+  width: 100%;
+  background-color: #7957ff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 17px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn:hover {
+  background-color: #5C35FA;
+}
+
+.note-form {
+  background-color: #f2f2f2;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.note-form p {
+  padding: 0;
+  margin: 0;
+  color: #f85757;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+form input {
+  display: block;
+  height: 40px;
+  border: 2px solid #a1a0a0;
+  border-radius: 5px;
+  width: 100%;
+  /* margin-bottom: 30px; */
+}
+
+form input:focus {
+  outline: none;
+  border: 2px solid #826BFA;
+}
+
+form textarea {
+  display: block;
+  border: 2px solid #a1a0a0;
+  border-radius: 5px;
+  width: 100%;
+}
+
+form textarea:focus {
+  outline: none;
+  border: 2px solid #826BFA;
+}
+
+form textarea::placeholder {
+  font-size: 16px;
+}
+
+form input::placeholder {
+  font-size: 15px;
+}
+
+
+.card-container {
+  margin-top: 20px;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  background-color: #f2f2f2;
+  width: 300px;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-body {
+  padding: 10px;
+  min-height: fit-content;
+}
+
+.card-header h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.card-header {
+  border-bottom: 1px solid rgb(185, 185, 185);
+  padding: 10px;
+}
+
+.card-footer {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-edit {
+  background-color: #7957ff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-edit:hover {
+  background-color: #5C35FA;
+}
+
+.btn-delete {
+  background-color: #f85757;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-delete:hover {
+  background-color: #f80f0f;
+}
+
+hr {
+  margin: 0;
+}
+
+.bg-danger {
+  background-color: #f80f0f !important;
+}
+
+.bg-success {
+  background-color: rgb(10, 160, 10);
 }
