@@ -28,6 +28,7 @@ function App() {
       ])
 
       setForm({ title: "", description: "" })
+      setError("")
     } else {
       setError(err.title)
     }
